@@ -1,0 +1,826 @@
+// Colors
+	@text: #fff;
+	@text-bl: #000;
+	@text-dark: #070707;
+	@bg: #1E252C;
+
+
+//Basic
+	html {
+		font-size: 10px;
+		overflow-x: hidden;
+		background: url(https://i.ibb.co/BwjxLMN/Frame-13-1.png);
+	} 
+	body {
+		padding: 0;
+		margin: 0;
+	}
+	.wrapper-checkin {
+		background: url(https://i.ibb.co/BwjxLMN/Frame-13-1.png);
+		position: relative;
+		overflow-x: hidden;
+		height: 98.8rem;
+	}
+	.wrapper {
+		background: url(https://i.ibb.co/BwjxLMN/Frame-13-1.png);
+		position: relative;
+		overflow-x: hidden;
+	}
+	.container {
+		max-width: none;
+		margin: 0px auto;
+		padding: 1rem 3rem ;
+		background: url(https://i.ibb.co/BwjxLMN/Frame-13-1.png);
+	}
+	.container-test {
+		max-width: none;
+		margin: 0px auto;
+		padding: 5rem 3rem 30rem 3rem;
+		background: url(https://i.ibb.co/BwjxLMN/Frame-13-1.png);
+	}
+	.container-test_site {
+		max-width: none;
+		margin: 0px auto;
+		padding: 0 3rem 35rem 3rem;
+		background: url(https://i.ibb.co/BwjxLMN/Frame-13-1.png);
+	}
+	.container-uppercase {
+		max-width: none;
+		margin: 0px auto;
+		padding: 5rem 0 0 0;
+		background: url(https://i.ibb.co/BwjxLMN/Frame-13-1.png);
+	}
+	.section {
+		background: url(https://i.ibb.co/BwjxLMN/Frame-13-1.png);
+	}
+	@media (min-width: 767px){
+		.container {
+			max-width: 750px;
+			padding: 1rem 9rem;
+		}
+	}
+	@media (min-width: 992px){
+		.container {
+			max-width: 970px;
+		}
+	}
+
+
+
+
+// header
+	.header-container {
+		max-width: none;
+		margin: 0px auto;
+		padding: 1rem 3rem ;
+		@media (min-width: 767px) {
+			max-width: 750px;
+			margin: 0px auto;
+			padding: 1rem 3rem ;
+		}
+	}
+	.header {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding-top: 3rem;
+	}
+	.menu_btn {
+		max-width: 100%;
+		position: relative;
+	}
+	.header-wrapper_content {
+		display: block;
+		justify-content: space-between;
+	}
+	.bg-img	{
+		display: flex;
+		justify-content: center;
+		margin: 0;
+		padding: 2rem 0;
+		img {
+			max-width: 100%;
+		}
+	}
+	.btn-next {
+		padding-top: 6rem;
+		display: none;
+	}
+	.wrapper-img_next {
+		display: flex;
+		justify-content: center;
+	}
+	.img_next {
+		img {
+			max-width: 100%;
+		}
+	}
+	.text_content-hd {
+		p {
+		max-width: 100%;
+		padding: 2rem 0;
+		margin: 0;
+		color: @text;
+		font: 900 2.4rem /3.5rem Montserrat;
+			@media (min-width: 767px) {
+						max-width: 100%;
+						padding: 2rem 0;
+						font: 900 4.4rem /5rem Montserrat;
+			}
+		}
+	}
+	.header-text_lowercase p {
+		margin: 0;
+		color: @text;
+		font: 400 1.4rem /3rem Montserrat;
+			@media (min-width: 767px) {
+				font: 400 1.8rem /3.2rem Montserrat;
+				padding: 0 15rem 0 10rem;
+			}
+	}
+
+// 2block
+	.wrapper-slide2 {
+		display: block;
+		flex-direction: column;
+		justify-content: center;
+	}
+	.uppercase_wrapper_news {
+		padding: 0 3rem 7rem 0;
+		margin: 0 0 5rem 0;
+	}
+	.section_uppercase_news {
+		display: flex;
+		justify-content: flex-start;
+		font: 900 3.4rem /3.5rem Montserrat;
+		color: @text;
+		position: absolute;
+		margin: 3.4rem 0 0 0;
+		padding: 0 0 0 0;
+			@media (min-width: 767px) {
+				font: 900 3.5rem /3.5rem Montserrat;
+				left: 9rem;
+				margin: 5rem 0;
+			}
+	}
+	.news-text_wrapper {
+		padding: 0 0 3rem 0;
+		margin: 0 0 3rem 0;
+	}
+	.news-text {
+			p {
+				font: 400 2.9rem /3.5rem Montserrat;
+				color: @text;
+				text-decoration: none;
+				margin: 2.4rem 0 0 0;
+				padding: 0 0 0 0;
+			}
+	}
+	.news-text p {
+  		position: relative;
+	}
+	.news-text p:after {
+	  	position: absolute;
+  		bottom: 0;
+  		left: 0;
+  		right: 0;
+  		margin: auto;
+  		width: 0%;
+  		content: '.';
+  		color: transparent;
+  		background: #aaa;
+  		height: 1px;
+  		transition: all 1s ease;
+	}
+	.news-text p:hover:after {
+ 		 width: 100%;
+	}
+	
+// 3block 
+	.img-test {
+		display: flex;
+		justify-content: center;
+			img {
+				max-width: 100%;
+			}
+	}
+	.test-wrapper {
+		// padding: 0 2.2rem;
+		margin: 2.5rem 0;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		position: absolute;
+	}
+	.test-a {
+		display: flex;
+		flex-direction: column;
+
+			a {
+				font: 400 2.4rem /3.5rem Montserrat;
+				color: @text;
+				text-decoration: none;
+				margin: 0 0;
+				padding: 2rem 0 0 0;
+			}
+	}
+	.test-a a {
+  		position: relative;
+	}
+	.test-a a:after {
+	  	position: absolute;
+  		bottom: 0;
+  		left: 0;
+  		right: 0;
+  		margin: auto;
+  		width: 0%;
+  		content: '.';
+  		color: transparent;
+  		background: #aaa;
+  		height: 1px;
+  		transition: all 1s ease;
+	}
+	.test-a a:hover:after {
+ 		 width: 100%;
+	}
+
+// menu
+	.menu {
+		position: fixed;
+		width: 100%;
+		height: 100%;
+		background-color: #fff;
+		transition: all 0.5s ease 0s;
+		top: -150%;
+		z-index: 20;
+	}
+	.menu_active {
+		top: 0 ;
+	}
+	.menu-list {
+		display: flex;
+		justify-content: space-around;
+		flex-direction: column;
+		height: 55%;
+		position: absolute;
+		left: 3rem;
+		top: 12rem;
+			@media (min-width: 767px) {
+				height: 45%;
+				top: 16rem;
+
+			}
+	}
+	.menu-list {
+		a {
+			text-decoration: none;
+			color: @text-dark;
+			font: 800 3.4rem /4rem Montserrat;
+		&:hover {
+			text-shadow: 0 0 2px black;
+			color: #fff;
+		}
+				@media (min-width: 767px) {
+					margin-left: 8rem;
+					font: 900 4.4rem /5rem Montserrat;
+				}
+		}
+	}
+	.line-menu {
+		width: 25rem;
+		height: 2rem;
+		border-bottom: 1px solid #000;
+		position: absolute;
+		bottom: 11rem;
+		left: 3rem;
+			a{
+				text-decoration: none;
+				color: @text-bl;
+				font: 600 1.2rem /1.6rem Montserrat;
+			}
+			@media (min-width: 767px) {
+				margin-left: 8rem;
+				bottom: 30rem;
+				border: none;
+				border-bottom: 1px solid #000;
+				width: 43rem;
+				height: 2.5rem;
+				background-color: none;
+				color: none;
+					a{
+						text-decoration: none;
+						color: @text-bl;
+						font: 600 1.8rem /2.4rem Montserrat;
+					}
+			}
+	}
+	.social {
+		position: absolute;
+		bottom: 6rem;
+		left: 2rem;
+		a {
+			padding: 0 1rem;
+		}
+			@media (min-width: 767px) {
+				margin-left: 8rem;
+				bottom: 25rem;
+			}
+	}
+
+	.shapka_active {
+		position: fixed;
+	}
+	.shapka {
+		position: relative;
+	}
+	.logo-menu {
+		position: absolute;
+		top: 3rem;
+		left: 3rem;
+	}
+	
+// close
+	#mdiv {
+  		width: 40px;
+  		height: 30px;
+  		position: absolute;
+  		right: 3rem;
+  		top: 3rem;
+
+  		  &:hover {
+  			opacity: 0.5;
+  		}
+
+	}
+
+	.mdiv {
+  		height: 25px;
+  		width: 2px;
+  		margin-left: 12px;
+  		background-color: black;
+  		transform: rotate(45deg);
+  		Z-index: 1;
+	}
+
+	.md {
+ 		height: 25px;
+  		width: 2px;
+  		background-color: black;
+  		transform: rotate(90deg);
+ 		Z-index: 2;
+	}
+
+
+// swiper
+	// slide-1
+	.section_swiper {
+		background: url(https://i.ibb.co/BwjxLMN/Frame-13-1.png);
+	}
+	.section_uppercase {
+		display: flex;
+		justify-content: flex-start;
+		font: 900 3.4rem /3.5rem Montserrat;
+		color: @text;
+		position: absolute;
+			@media (min-width: 767px) {
+				font: 900 3.5rem /3.5rem Montserrat;
+				left: 9rem;
+				margin: 5rem 0;
+			}
+	}
+	.slide1_uppercase {
+		font: 600 5.5rem /10.5rem Montserrat;
+		color: @text;
+		margin: 0 0 0 0;
+		padding: 0 0 0 0;
+		position: absolute;
+		top: 1rem;
+			@media (max-width: 340px){
+				top: 0.5rem ;
+			}
+			@media (min-width: 767px) {
+				font: 600 4.5rem /10.5rem Montserrat;
+				top: 2rem;
+			}
+	}
+	.slide1_line {
+		height: 1px;
+		width: 22rem;
+		background-color: #fff;
+		position: absolute;
+		bottom: 4rem;
+	}
+	.wrapper-uppercase {
+		display: flex;
+		justify-content: center;
+	}
+	.slide1_lowercase {
+		font: 400 1.6rem /3rem Montserrat;
+		color: @text;
+		position: absolute;
+		bottom: 9rem;
+		margin: 0;
+		padding: 2.5rem 3rem 0 3rem;
+			@media (min-width: 767px) {
+				padding: 0 20rem;
+				font: 400 1.8rem /3rem Montserrat;
+			}
+			@media (min-width: 510px) {
+				padding: 0 6rem;
+			}
+			@media (min-width: 570px) {
+				padding: 0 8rem;
+			}
+			@media (min-width: 680px) {
+				padding: 0 10rem;
+				bottom: 14rem;
+			}
+			@media (max-width: 370px) {
+				padding: 0 2rem;
+				bottom: 8rem;
+				font: 300 1.4rem /3rem Montserrat;
+			}
+
+	}
+
+	// swiper
+	.wrapper_block3 {
+		background-color: @bg;
+	}
+	.uppercase_wrapper {
+		padding: 0 3rem 10rem 0;
+	}
+     .swiper-container {
+      height: 45rem;
+      background-color: @bg;
+      margin: 0;
+      padding: 0;
+    }
+    .swiper-wrapper {
+    	background-color: @bg;
+    }
+    .swiper-slide {
+      text-align: center;
+      background-color: @bg;
+
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center;
+    }
+    .pag_swiper .swiper-pagination-bullet {
+    	background-color: #fff;
+    		@media (min-width: 765px) {
+    			width: 1rem;
+    			height: 1rem;
+    		}
+    }
+    .pag_swiper .swiper-pagination-clickable {
+    	border: none;
+    }
+    .swiper-button-next::after {
+    	display: none;
+    	outline: none;
+    		@media (min-width: 767px) {
+    			color: #fff;
+    			margin: 0 5rem 0 0;
+    			display: block;
+    				&:hover {
+    					border: none;
+    					opacity: 0.6;
+    					outline: none;
+    				}
+    				&:active {
+    					border: none;
+    					outline: none;
+    				}
+    		}
+    }
+    .swiper-button-prev::after {
+    	display: none;
+    	outline: none;
+    		@media (min-width: 767px) {
+    			color: #fff;
+    			margin: 0 0 0 5rem;
+    			display: block;
+    				&:hover {
+    					border: none;
+    					opacity: 0.6;
+    					outline: none;
+    				}
+    				&:active {
+    					border: none;
+    					outline: none;
+    				}
+    		}
+    }
+
+
+// footer
+	.footer {
+		background: url(https://i.ibb.co/BwjxLMN/Frame-13-1.png);
+		height: 25rem;
+	}
+	.footer_block {
+		display: flex;
+		justify-content: center;
+	}
+	.footer_img {
+		padding-top: 8rem;
+	}
+
+
+// checkin
+	.header-checkin {
+
+	}
+	input[type=text], input[type=password] {
+    	width: 100%;
+    	padding: 1rem 0 1rem 0;
+    	margin: 0.5rem 0 5rem 0;
+    	display: inline-block;
+    	border: none;
+    	border-bottom: 1px solid #DEE3E9;
+    	box-sizing: border-box;
+    	background-color:  #1E252C;
+	}
+
+	.container-checkin {
+   		padding: 4rem 3rem;
+    	background-color: @bg;
+	}
+
+	.psw-wrapper {
+		display: flex;
+		justify-content: center;
+	}
+	.psww {
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+		p {
+			font: 100 1.4rem /2.4rem Montserrat;
+			color: #fff;
+		}
+	}
+	.pswc {
+		font: 100 1.8rem  Montserrat;
+		color: #fff;
+		a {
+			text-decoration: none;
+			color: #00BFFF;
+		}
+	}
+
+	.modal {
+    	display: none; 
+    	position: fixed; 
+    	z-index: 100; 
+    	left: 0;
+    	top: 0;
+    	width: 100%;
+    	height: 100%;
+    	overflow: auto;
+    	background-color: rgb(0,0,0);
+    	background-color: rgba(0,0,0,0.4); 
+    	padding-top: 0.5rem;
+	}
+
+	.modal-content {
+    	background-color: @bg;
+    	margin: 5% auto 15% auto; 
+    	width: 90%; 
+	}
+	.header-text_lowercase-ch {
+		p{
+			margin: 0;
+			color: @text;
+			font: 400 1.4rem /3rem Montserrat;
+			margin-bottom: 3rem;
+		}
+	}
+	.mail {
+    	font: 400 1.4rem /3rem Montserrat;;
+   		color: #fff;
+	}
+	.mail-placeh {
+		outline: none;
+		padding: 0;
+		margin: 0;
+	}
+	.pass {
+	    font: 400 1.4rem /3rem Montserrat;
+   		color: #fff;
+	}
+	.pass-placeh {
+		outline: none;
+	}
+	.passw {
+   		font: 400 1.4rem /3rem Montserrat;
+    	color: #fff;
+	}
+	.passw-placeh {
+		outline: none;
+		padding: 0 0 0 0;
+		margin: 0 0 10rem 0;
+	}
+	.btn-checkin {
+    	width: 100%;
+    	height: 50px;
+    	background: none;
+    	border: 1px solid #fff;
+   		border-radius: 6px;
+   		font: 400 2rem  Montserrat;
+   		color: #fff;
+   		margin-top: 1rem;
+	}
+
+
+	#mdiv-checkin {
+  		width: 40px;
+  		height: 30px;
+  		position: absolute;
+  		right: 3rem;
+  		top: 7rem;
+
+  		  &:hover {
+  			opacity: 0.5;
+  		}
+
+	}
+
+	.mdiv-checkin {
+  		height: 25px;
+  		width: 2px;
+  		background-color: #fff;
+  		transform: rotate(45deg);
+  		Z-index: 1;
+	}
+
+	.md-checkin {
+ 		height: 25px;
+  		width: 2px;
+  		background-color: #fff;
+  		transform: rotate(90deg);
+ 		Z-index: 2;
+	}
+	.animate {
+    	-webkit-animation: animatezoom 0.6s;
+    	animation: animatezoom 0.6s
+	}
+
+
+@-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+}
+    
+@keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+}
+@media screen and (max-width: 300px) {
+    span.psw {
+       display: block;
+       float: none;
+    }
+    .cancelbtn {
+       width: 100%;
+    }
+}
+
+
+// kurs
+	.container-uppercase_kurs {
+		max-width: none;
+		margin: 0px auto;
+		padding: 0 0 0 3rem;
+	}
+	.footer_kurs {
+		background: url(https://i.ibb.co/BwjxLMN/Frame-13-1.png);
+		height: 20rem;
+		padding: 0 0 0 0;
+		margin: 3.5rem 0 0 0;
+	}
+
+// test
+	.footer_test {
+		background: url(https://i.ibb.co/BwjxLMN/Frame-13-1.png);
+		height: 20rem;
+		padding: 0 0 0 0;
+		margin: 0 0 0 0;
+	}
+
+// svyaz
+	.header-text_lowercase-sv {
+		p{
+
+			margin: 0;
+			color: @text;
+			font: 300 1.4rem /2rem Montserrat;
+			margin: 0 0 1.2rem 0;
+		}
+	}
+	.text_content-hd-sv {
+		p {
+		padding: 2rem 0 3.5rem 0;
+		margin: 0;
+		color: @text;
+		font: 600 1.5rem /1.6rem Open Sans;
+			// @media (min-width: 767px) {
+			// 			max-width: 100%;
+			// 			padding: 2rem 0;
+			// 			font: 900 4.4rem /5rem Montserrat;
+			// }
+		}
+	}
+	.social-sv {
+		a {
+			padding: 0 1.5rem 0 0;
+		}
+		p {
+			padding: 4rem 0 1rem 0;
+			margin: 0 0 0 0;
+			font: 400 1.3rem /1.7rem Montserrat;
+			color: @text;
+		}
+	}
+	.uppercase-text-sv {
+		padding: 0 0 0 0 0;
+		margin: 5rem 0 0 0;
+			p {
+				color: @text;
+				font: 700 2.8rem /3.5rem Montserrat;
+			}
+	}
+	.mail-sv {
+    	font: 400 1.2rem /3rem Montserrat;;
+   		color: #fff;
+	}
+	.mail-placeh {
+		outline: none;
+	}
+	.pass-sv {
+	    font: 400 1.2rem /3rem Montserrat;
+   		color: #fff;
+	}
+	.pass-placeh {
+		outline: none;
+	}
+	.passw-sv {
+   		font: 400 1.2rem /3rem Montserrat;
+    	color: #fff;
+	}
+	.passw-placeh {
+		outline: none;
+	}
+	.btn-checkin {
+    	width: 100%;
+    	height: 50px;
+    	background: none;
+    	border: 1px solid #fff;
+   		border-radius: 6px;
+   		font: 400 2rem  Montserrat;
+   		color: #fff;
+   		margin-top: 1rem;
+	}
+
+
+// close
+	#mdiv-sv {
+  		width: 4rem;
+  		height: 3rem;
+  		position: absolute;
+  		right: 3rem;
+  		top: 8.1rem;
+
+  		  &:hover {
+  			opacity: 0.5;
+  		}
+
+	}
+
+	.mdiv-sv {
+  		height: 1.8rem;
+  		width: 2px;
+  		margin-left: 1.2rem;
+  		background-color: #fff;
+  		transform: rotate(45deg);
+  		Z-index: 1;
+	}
+
+	.md-sv {
+ 		height: 1.8rem;
+  		width: 2px;
+  		background-color: #fff;
+  		transform: rotate(90deg);
+ 		Z-index: 2;
+	}
