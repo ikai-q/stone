@@ -26,7 +26,7 @@
 			<img src="img/logobl.svg" class="logo-menu">
 				<div id="mdiv">
   					<div class="mdiv">
-   					<div class="md menu_btn"></div>
+   						<div class="md menu_btn"></div>
   					</div>
 				</div>
 			<nav class="menu-list">
@@ -35,7 +35,7 @@
 				<a href="news.html">Новости</a>
 				<a href="#" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Вход/<br>Регистрация</a>
 			</nav>
-			<div class="line-menu"><a href="#">Напишите нам, если есть вопросы</a></div>
+			<div class="line-menu"><a href="#" onclick="document.getElementById('id02').style.display='block'" style="width:auto;">Напишите нам, если есть вопросы</a></div>
 			<div class="social">
 				<a href="https://web.facebook.com/profile.php?id=100017170218196"><img src="img/facebook - FontAwesome.svg"></a>
 				<a href="https://twitter.com/qwertuipp15"><img src="img/twitter - FontAwesome.svg"></a>
@@ -45,28 +45,43 @@
 
 		<div class="section">
 			<div class="shapka">
+				<div class="bl1" id="bl1">
 				<div class="header-container">
 
 					<div class="header-wrapper">
 
 						<div class="header">
 							<div class="block_header">
-								<div class="img_logo">
+								<div class="img_logo-hd">
 										<picture>
 											<source srcset="img/logo68.svg" type="image/png" media="(min-width:1140px)">
-											<source srcset="img/logo68.svg" type="image/png" media="(min-width:992px)">
+											<source srcset="img/logo68.svg" type="image/png" media="(min-width:991px)">
 											<source srcset="img/logo40.svg" type="image/png" media="(min-width:767px)">
 											<source srcset="img/logo40.svg" type="image/png" media="(max-width:992px)">
 											<img src="img/logo68.svg">
 										</picture>
 								</div>
 							</div>
-							<div class="">
+
+							<div class="menu-1280">
+								<nav class="big-menu">
+									<a href="#bl1" class="menu-link">Главная</a>
+									<a href="#bl2" class="menu-link">Новости</a>
+									<a href="#bl3" class="menu-link">Тесты</a>
+									<a href="#bl4" class="menu-link">Курсы</a>
+								</nav>
+							</div>
+
+							<div class="signin-wrapper">
+								<a href="#" class="signin" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Регистрация</a>
+							</div>
+
+							<div class="burger">
 								<div class="img_menu">
 										<picture class="menu_btn">
 											<source srcset="img/nav1.svg" type="image/svg" media="(min-width:1140px)">
-											<source srcset="img/" type="image/png" media="(min-width:992px)">
-											<source srcset="img/menu.png" type="image/png" media="(max-width:992px)">
+											<source srcset="img/small.svg" type="image/png" media="(min-width:991px)">
+											<source srcset="img/small.svg" type="image/png" media="(max-width:992px)">
 											<img src="img/nav1.svg">
 										</picture>
 								</div>
@@ -81,19 +96,24 @@
 						<div class="header-wrapper_content">
 
 							<div class="header-text_content">
-								<div class="text_content-hd">
-									<p>Сервис выявления<br> профориентации<br></p>
-								</div>
-							</div>
 
-							<div class="header-text_lowercase">
-								<p>Прежде всего, высокое качество позиционных исследований требует определения и уточнения кластеризации усилий.</p>
+								<div class="text_content-hd">
+									<p>Сервис<br class="br-text"> выявления<br> профориентации<br></p>
+								</div>
+
+								<p class="lowercase-text">Прежде всего, высокое качество позиционных исследований требует определения и уточнения кластеризации усилий.</p>
+
+								<div class="madeby">
+									<img src="img/Made by and co.svg">
+								</div>
+
 							</div>
 
 							<div class="block-bg_img">
 								<div class="bg-img">
 									<picture>
-										<source srcset="img/image.png" type="image/png" media="(min-width:1330px)">
+										<source srcset="img/1.png" type="image/png" media="(min-width:1330px)">
+										<source srcset="img/1.png" type="image/png" media="(min-width:991px)">
 										<source srcset="img/582.png" type="image/png" media="(min-width:767px)">
 										<source srcset="img/2.png" type="image/png" media="(max-width:767px)">
 										<img src="img/image.png">
@@ -107,7 +127,7 @@
 							<div class="btn-next">
 								<div class="wrapper-img_next">
 									<div class="img_next">
-										<img src="img/scroll.svg">
+										<a href="#bl2" class="scroll2"><img src="img/scroll.svg"></a>
 									</div>
 								</div>
 							</div>
@@ -118,9 +138,12 @@
 				</div>
 			</div>
 		</div>
+	</div>
 
 <!-- 2block -->
+<div class="bl2" id="bl2">
 	<div class="container">
+		<div class="news-wrapper">
 
 		<div class="uppercase_wrapper_news">
 			<p class="section_uppercase_news">Новости</p>
@@ -132,12 +155,14 @@
 			    	<!-- slide1 -->
 
 			    	<div class="wrapper-slide2">
-			    		<img src="img/josh-redd-s9me9vS7YtI-unsplash 1.png">
-			    	
+
+			    		<div class="img-swiper">
+			    		<img src="img/Frame 12.png" img-111>
+			    		</div>
 
 			    	<div class="news-text_wrapper">
 			    		<div class="news-text">
-			    			<p>Профессия: ювелир...</p>
+			    			<p>Новая профессия: педагогический дизайнер...</p>
 			    		</div>
 			    	</div>
 			    	</div>
@@ -146,12 +171,15 @@
 			    <div class="swiper-slide">
 			    	<!-- slide2 -->
 			    	<div class="wrapper-slide2">
-			    		<img src="img/josh-redd-s9me9vS7YtI-unsplash 1.png">
+
+			    		<div class="img-swiper">
+			    		<img src="img/Frame 14.png" img-111>
+			    		</div>
 			    	
 
 			    	<div class="news-text_wrapper">
 			    		<div class="news-text">
-			    			<p>Профессия: ювелир...</p>
+			    			<p>Профессия, о которой вы не знали: GR-менеджер...</p>
 			    		</div>
 			    	</div>
 			    	</div>
@@ -160,7 +188,10 @@
 			    <div class="swiper-slide">
 			    	<!-- slide3 -->
 			    	<div class="wrapper-slide2">
-			    		<img src="img/josh-redd-s9me9vS7YtI-unsplash 1.png">
+
+			    		<div class="img-swiper">
+			    		<img src="img/josh-redd-s9me9vS7YtI-unsplash 1.png" img-111>
+			    		</div>
 			    	
 
 			    	<div class="news-text_wrapper">
@@ -174,12 +205,15 @@
 			    <div class="swiper-slide">
 			    	<!-- slide4 -->
 			    	<div class="wrapper-slide2">
-			    		<img src="img/josh-redd-s9me9vS7YtI-unsplash 1.png">
+
+			    		<div class="img-swiper">
+			    		<img src="img/Frame 12.png" img-111>
+			    		</div>
 			    	
 
 			    	<div class="news-text_wrapper">
 			    		<div class="news-text">
-			    			<p>Профессия: ювелир...</p>
+			    			<p>Профессии, о которых вы вряд ли слышали...</p>
 			    		</div>
 			    	</div>
 			    	</div>
@@ -187,12 +221,15 @@
 			    <div class="swiper-slide">
 			    	<!-- slide5 -->
 			    	<div class="wrapper-slide2">
-			    		<img src="img/josh-redd-s9me9vS7YtI-unsplash 1.png">
+
+			    		<div class="img-swiper">
+			    		<img src="img/Frame 14.png" img-111>
+			    		</div>
 			    	
 
 			    	<div class="news-text_wrapper">
 			    		<div class="news-text">
-			    			<p>Профессия: ювелир...</p>
+			    			<p>Новая профессия: педагогический дизайнер...</p>
 			    		</div>
 			    	</div>
 			    	</div>
@@ -201,12 +238,15 @@
 			    <div class="swiper-slide">
 			    	<!-- slide6 -->
 			    	<div class="wrapper-slide2">
-			    		<img src="img/josh-redd-s9me9vS7YtI-unsplash 1.png">
+
+			    		<div class="img-swiper">
+			    		<img src="img/josh-redd-s9me9vS7YtI-unsplash 1.png" class="img-111">
+			    		</div>
 			    	
 
 			    	<div class="news-text_wrapper">
 			    		<div class="news-text">
-			    			<p>Профессия: ювелир...</p>
+			    			<p>Профессия, о которой вы не знали: GR-менеджер...</p>
 			    		</div>
 			    	</div>
 			    	</div>
@@ -214,41 +254,51 @@
 			    </div>
     		</div>
   		</div>
+	</div>
 
-
-
+</div>
 
 
 	<!-- 3block -->
 
-
+	<div class="bl3" id="bl3">
+		<div class="con">
+		<div class="test-wrapper-bl">
 			<div class="uppercase_wrapper">
 				<p class="section_uppercase">Тесты</p>
 			</div>
-			
+		</div>
 		<div class="container-test">
+
+
+			<div class="test-wrapper-a">
+				<nav class="test-a">
+					<a href="#">Тест Е. А. Климова</a>
+					<a href="#">Тест ДЖ. Голланда</a>
+					<a href="#">Тест Е. А. Климова</a>
+					<a href="#">Тест Ж. Голланда</a>
+					<a href="#">Тест Е. А. Климова</a>
+				</nav>
+			</div>
+
 			<div class="img-test">
 				<img src="img/Frame 18.png">
 			</div>
 
-			<div class="test-wrapper">
-				<nav class="test-a">
-					<a href="#">Тест Е. А. Климова</a>
-					<a href="#">Тест ДЖ. Голланда</a>
-					<a href="#">Тест...</a>
-					<a href="#">Тест...</a>
-					<a href="#">Тест...</a>
-				</nav>
-			</div>
-
 		</div>
+		</div>
+	</div>
+
 
 	<!-- 4 block -->
+	<div class="bl4" id="bl4">
+		<div class="con">
 	<div class="container-uppercase">
 		<div class="uppercase_wrapper">
 		<p class="section_uppercase">Курсы</p>
 		</div>
 		</div>
+	</div>
 		<div class="swiper-section">
   			<div class="swiper-container">
    				<div class="swiper-wrapper">
@@ -305,13 +355,14 @@
     		</div>
   		</div>
   	</div>
+</div>
 
   <!-- footer -->
   			<div class="footer">
   	
   					<div class="footer_block">
   						<div class="footer_img">
-  							<img src="img/logo68.svg">
+  							<a href="#bl1" class="footer_img-id"><img src="img/logo68.svg"></a>
   						</div>
   					</div>
   		
@@ -370,15 +421,6 @@
                         </div>
 
 
-                        <div class="block-btn_next">
-                            <div class="btn-next">
-                                <div class="wrapper-img_next">
-                                    <div class="img_next">
-                                        <img src="img/scroll.svg">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
 
                     </div>
       					<label for="uname" class="mail">ПОЧТА</label>
@@ -393,14 +435,17 @@
       					<button type="submit" class="btn-checkin">Зарегистрироваться</button>
     				</div>
 
-    				<div class="container-checkin">
+    				<div class="container-checkin_footer">
+
     					<div class="psw-wrapper">
-    						<div class="psww">
-      							<span class="pswc">Уже есть <a href="#">аккаунт?</a></span>
-      							<p>Регистрируясь, вы принимаете наши
-								Условия использования и политика конфиденциальности</p>	
-							</div>
+    						<span class="pswc">Уже есть <a href="#">аккаунт?</a></span>
       					</div>
+
+      					<div class="psww-wrapper">
+      						<span class="psww">Регистрируясь, вы принимаете наши
+							Условия использования и политика конфиденциальности</span>	
+						</div>
+      				
     				</div>
   </form>
 </div>
@@ -408,6 +453,82 @@
 
 	</div>
 	
+
+
+
+
+<!-- svyaz -->
+	<div id="id02" class="modal">
+  
+  		<form class="modal-content animate">
+    		<div class="container-checkin">
+                <div class="header-wrapper">
+
+                        <div class="header-checkin">
+                            <div class="block_header">
+                            <div class="header-text_content">
+                                <div class="text_content-hd-sv">
+                                    <p>Связаться с нами</p>
+                                </div>
+                            </div>
+                            </div>
+                            <div class="">
+                                <div class="img_menu">
+                                             
+                                         <div id="mdiv-sv">
+  											<div class="mdiv-sv">
+   												<div class="md-sv" onclick="document.getElementById('id02').style.display='none'"></div>
+  											</div>
+										</div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="header-content">
+
+                        <div class="header-wrapper_content">
+
+                            <div class="header-text_lowercase-sv">
+                                <p>Адрес: ул. Братьев<br>
+                                 Ксенофонтовых, 31,<br>
+                                 Покровск</p>
+								<p>+123 456 789</p>
+								<p>bahmlaj@gmail.com</p>
+                            </div>
+
+                        <div class="social-sv">
+                        	<p>Соц. сети</p>
+							<a href="https://web.facebook.com/profile.php?id=100017170218196"><img src="img/facebookw.svg"></a>
+							<a href="https://twitter.com/qwertuipp15"><img src="img/twitw.svg"></a>
+							<a href="https://www.instagram.com/mpityakutia/"><img src="img/instaw.svg"></a>
+						</div>
+
+						<div class="uppercase-text-sv">
+							<p>Заинтересовались нашим проектом?</p>
+						</div>
+
+                        </div>
+
+
+
+                    </div>
+      					<label for="uname" class="mail-sv">ИМЯ</label>
+      					<input type="text" placeholder="Ваше имя" name="uname" required class="mail-placeh-sv">
+
+      					<label for="psw" class="pass-sv">ПОЧТА</label>
+      					<input type="text" placeholder="Ваша почта" name="psw" required class="pass-placeh-sv">
+
+      					<label for="psw" class="passw-sv">СООБЩЕНИЕ</label>
+      					<textarea name="comment" placeholder="Ваше сообщение" class="passw-placeh-sv"></textarea>
+        				
+        				<div class="wrapper-btn-sv">
+      					<button type="submit" class="btn-sv">Отправить</button>
+      					</div>
+    		</div>
+  		</form>
+	</div>
 
 
 

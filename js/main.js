@@ -37,3 +37,51 @@ window.onclick = function(event) {
         modal.style.display = "none";
     }
 }
+
+// fixedmenu
+$(document).ready(function() {
+  $(window).scroll(function() {
+    if ($(this).scrollTop() >= 200) {
+      $(".header-container").addClass("fix");
+    } else {
+      $(".header-container").removeClass("fix");
+    }
+  });
+});
+
+// perehotpoyakoru
+$(document).ready(function() {
+			$("a.menu-link").click(function(){
+				$("html, body").animate({
+					scrollTop: $($(this).attr("href")).offset().top + "px"
+				}, {
+					duration: 1000,
+					easing: "swing"
+				});
+				return false;
+			});
+		});
+
+$(document).ready(function() {
+			$("a.footer_img-id").click(function(){
+				$("html, body").animate({
+					scrollTop: $($(this).attr("href")).offset().top + "px"
+				}, {
+					duration: 1000,
+					easing: "swing"
+				});
+				return false;
+			});
+		});
+
+$(document).ready(function() {
+			$("a.scroll2").click(function(){
+				$("html, body").animate({
+					scrollTop: $($(this).attr("href")).offset().top + "px"
+				}, {
+					duration: 1000,
+					easing: "swing"
+				});
+				return false;
+			});
+		});

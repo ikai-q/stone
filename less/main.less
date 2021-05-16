@@ -32,11 +32,22 @@
 		padding: 1rem 3rem ;
 		background: url(https://i.ibb.co/BwjxLMN/Frame-13-1.png);
 	}
+	.con {
+		padding: 1rem 3rem;
+	}
 	.container-test {
 		max-width: none;
 		margin: 0px auto;
-		padding: 5rem 3rem 30rem 3rem;
+				padding: 1rem 3rem ;
 		background: url(https://i.ibb.co/BwjxLMN/Frame-13-1.png);
+			@media (min-width: 1279px) {
+				max-width: 1080px;
+				display: flex;
+				justify-content: space-around;
+				padding: 10rem 16rem 20rem 16rem;
+				margin: 0 auto;
+
+			}
 	}
 	.container-test_site {
 		max-width: none;
@@ -59,9 +70,11 @@
 			padding: 1rem 9rem;
 		}
 	}
-	@media (min-width: 992px){
+	@media (min-width: 1279px){
 		.container {
-			max-width: 970px;
+			padding: 1rem 16rem;
+			margin: 0 auto;
+			max-width: 1080px;
 		}
 	}
 
@@ -73,10 +86,39 @@
 		max-width: none;
 		margin: 0px auto;
 		padding: 1rem 3rem ;
-		@media (min-width: 767px) {
-			max-width: 750px;
-			margin: 0px auto;
-			padding: 1rem 3rem ;
+			@media (min-width: 767px) {
+				max-width: 750px;
+				margin: 0px auto;
+				padding: 1rem 3rem ;
+			}
+			@media (min-width: 1279px) {
+				padding: 0 16rem;
+				margin: 0 auto;
+				max-width: 1080px;
+
+ 				transition:all 1s linear;
+  				top: -30px;
+			}
+	}
+	.fix {
+		display: none;
+			@media (min-width: 1279px) {
+					display: block;
+					position: fixed;
+					transition:all .5s ease;
+					top: 0;
+					z-index: 3;
+					background-color: @bg;
+					padding: 0 6rem;
+					width: 100%;
+					margin: 0 auto;
+					max-width: none;
+					opacity: 0.85;
+			}
+	}
+	.img_logo-hd {
+		@media (min-width: 1279px) {
+			margin: 0 0 1rem 0;
 		}
 	}
 	.header {
@@ -84,14 +126,98 @@
 		justify-content: space-between;
 		align-items: center;
 		padding-top: 3rem;
+			@media (min-width: 1279px) {
+				padding: 2rem 0;
+			}
+	}
+	.big-menu {
+		display: none;
+		@media (min-width: 1279px) {
+				display: block;
+				display: flex;
+				justify-content: center;
+
+		}
+	}
+	.menu-link {
+		display: none;
+		@media (min-width: 1279px) {
+				display: block;
+				text-decoration: none;
+				color: @text;
+				font: 400 1.6rem /1.4rem Montserrat;
+				padding: 0 0 0 0;
+				margin: 0 0 0 6rem;
+		}
+	}
+	.big-menu a,
+	.signin-wrapper a {
+  		position: relative;
+	}
+	.big-menu a:after, 
+	.signin-wrapper a:after {
+	  	position: absolute;
+  		bottom: 0;
+  		left: 0;
+  		right: 0;
+  		margin: auto;
+  		width: 0%;
+  		content: '.';
+  		color: transparent;
+  		background: #aaa;
+  		height: 1px;
+  		transition: all 1s ease;
+	}
+	.big-menu a:hover:after,
+	.signin-wrapper a:hover:after {
+ 		 width: 100%;
+	}
+
+	.signin {
+		display: none;
+			@media (min-width: 1279px) {
+				display: block;
+				text-decoration: none;
+				color: @text;
+				font: 400 1.6rem /1.4rem Montserrat;
+				padding: 0 0 0.5rem 0;
+				margin: 0 0 0 20rem;
+		}
+	}
+	.signin-wrapper {
+		display: none;
+			@media (min-width: 1279px) {
+					display: block;
+						a {
+							display: block;
+							display: flex;
+							justify-content: flex-end;
+
+						}
+		}
 	}
 	.menu_btn {
 		max-width: 100%;
 		position: relative;
+			@media (min-width: 1279px) {
+				display: none;
+			}
 	}
 	.header-wrapper_content {
 		display: block;
 		justify-content: space-between;
+			@media (min-width:1279px) {
+				display: flex;
+				justify-content: space-between;
+
+			}
+	}
+	.header-text_content {
+			@media (min-width: 1279px) {
+				max-width: 55rem;
+				margin: 0;
+				padding: 6rem 0 0 0;
+		 }
 	}
 	.bg-img	{
 		display: flex;
@@ -101,10 +227,17 @@
 		img {
 			max-width: 100%;
 		}
+			@media (min-width: 1279px) {
+
+			}
 	}
 	.btn-next {
 		padding-top: 6rem;
 		display: none;
+			@media (min-width: 1279px) {
+				display: block;
+				padding: 0;
+			}
 	}
 	.wrapper-img_next {
 		display: flex;
@@ -116,6 +249,11 @@
 		}
 	}
 	.text_content-hd {
+		@media (min-width: 1279px) {
+			max-width: 55rem;
+			margin: 0;
+			padding: 0;
+		}
 		p {
 		max-width: 100%;
 		padding: 2rem 0;
@@ -127,9 +265,14 @@
 						padding: 2rem 0;
 						font: 900 4.4rem /5rem Montserrat;
 			}
+			@media (min-width: 1279px) {
+						padding: 2rem 0;
+						font: 900 5rem /8rem Montserrat;
+			}
+
 		}
 	}
-	.header-text_lowercase p {
+	.lowercase-text {
 		margin: 0;
 		color: @text;
 		font: 400 1.4rem /3rem Montserrat;
@@ -137,7 +280,26 @@
 				font: 400 1.8rem /3.2rem Montserrat;
 				padding: 0 15rem 0 10rem;
 			}
+			@media (min-width: 1279px) {
+				font: 400 1.8rem /3.2rem Montserrat;
+				padding: 0 0 0 0;
+				margin: 0 0 0 4rem;
+			}
 	}
+	.br-text {
+		display: none;
+		 @media (min-width: 1279px) {
+		 	display: block;
+		 }
+	}
+	.madeby {
+		display: none;
+			@media (min-width: 1279px) {
+				display: block;
+				padding: 3.5rem 0 0 0;
+			}
+	}
+
 
 // 2block
 	.wrapper-slide2 {
@@ -148,6 +310,9 @@
 	.uppercase_wrapper_news {
 		padding: 0 3rem 7rem 0;
 		margin: 0 0 5rem 0;
+			@media (min-width: 1279px) {
+				display: none;
+			}
 	}
 	.section_uppercase_news {
 		display: flex;
@@ -173,7 +338,7 @@
 				color: @text;
 				text-decoration: none;
 				margin: 2.4rem 0 0 0;
-				padding: 0 0 0 0;
+				padding: 0 0 2rem 0;
 			}
 	}
 	.news-text p {
@@ -195,7 +360,12 @@
 	.news-text p:hover:after {
  		 width: 100%;
 	}
-	
+	.news-wrapper{
+		@media (min-width: 1279px) {
+			padding: 0 0 0 0;
+			margin: 20rem 0 17rem 0;
+		}
+	}
 // 3block 
 	.img-test {
 		display: flex;
@@ -203,14 +373,23 @@
 			img {
 				max-width: 100%;
 			}
+			@media (min-width: 1279px) {
+				display: flex;
+				justify-content: center;
+				margin: 3rem 0 0 0;
+			}
 	}
-	.test-wrapper {
+	.test-wrapper-a {
 		// padding: 0 2.2rem;
 		margin: 2.5rem 0;
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		position: absolute;
+				@media (min-width: 1279px) {
+						margin: 0;
+						padding: 0;
+				}
+
 	}
 	.test-a {
 		display: flex;
@@ -222,6 +401,11 @@
 				text-decoration: none;
 				margin: 0 0;
 				padding: 2rem 0 0 0;
+					@media (min-width: 1279px) {
+						margin: 0;
+						padding: 3rem 0 0 0;
+						font: 500 3.4rem /4.5rem Montserrat;
+				}
 			}
 	}
 	.test-a a {
@@ -243,6 +427,11 @@
 	.test-a a:hover:after {
  		 width: 100%;
 	}
+	.test-wrapper-bl {
+		padding: 0 0 0 0;
+		margin: 15rem 0 0 0;
+	}
+
 
 // menu
 	.menu {
@@ -440,6 +629,9 @@
 				bottom: 8rem;
 				font: 300 1.4rem /3rem Montserrat;
 			}
+			@media (min-width: 1279px) {
+				padding: 0 35rem;
+			}
 
 	}
 
@@ -449,6 +641,9 @@
 	}
 	.uppercase_wrapper {
 		padding: 0 3rem 10rem 0;
+			@media (min-width: 1279px) {
+				display: none;
+			}
 	}
      .swiper-container {
       height: 45rem;
@@ -542,7 +737,7 @@
 	.header-checkin {
 
 	}
-	input[type=text], input[type=password] {
+	input.mail-placeh, .pass-placeh, .passw-placeh {
     	width: 100%;
     	padding: 1rem 0 1rem 0;
     	margin: 0.5rem 0 5rem 0;
@@ -551,25 +746,33 @@
     	border-bottom: 1px solid #DEE3E9;
     	box-sizing: border-box;
     	background-color:  #1E252C;
+    	color: #fff;
 	}
 
 	.container-checkin {
    		padding: 4rem 3rem;
     	background-color: @bg;
 	}
-
+	.container-checkin_footer {
+   		padding: 0 3rem 4rem 3rem;
+    	background-color: @bg;
+	}
 	.psw-wrapper {
 		display: flex;
-		justify-content: center;
+    	justify-content: center;
+    	margin: 0;
+    	padding: 0 0 1.5rem 0;
+	}
+	.psww-wrapper {
+		display: flex;
+    	justify-content: center;
+    	margin: 0;
+    	padding: 0;
+    	text-align: center;
 	}
 	.psww {
-		display: flex;
-		justify-content: center;
-		flex-direction: column;
-		p {
-			font: 100 1.4rem /2.4rem Montserrat;
-			color: #fff;
-		}
+		font: 100 1.2rem /2.4rem Montserrat;
+		color: #fff;
 	}
 	.pswc {
 		font: 100 1.8rem  Montserrat;
@@ -597,7 +800,7 @@
 	.modal-content {
     	background-color: @bg;
     	margin: 5% auto 15% auto; 
-    	width: 90%; 
+    	width: 87%; 
 	}
 	.header-text_lowercase-ch {
 		p{
@@ -613,8 +816,6 @@
 	}
 	.mail-placeh {
 		outline: none;
-		padding: 0;
-		margin: 0;
 	}
 	.pass {
 	    font: 400 1.4rem /3rem Montserrat;
@@ -629,8 +830,6 @@
 	}
 	.passw-placeh {
 		outline: none;
-		padding: 0 0 0 0;
-		margin: 0 0 10rem 0;
 	}
 	.btn-checkin {
     	width: 100%;
@@ -650,7 +849,10 @@
   		position: absolute;
   		right: 3rem;
   		top: 7rem;
-
+  			@media (min-width: 1279px) {
+  				right: 8rem;
+  				top: 10rem;
+  			}
   		  &:hover {
   			opacity: 0.5;
   		}
@@ -720,6 +922,48 @@
 	}
 
 // svyaz
+	.container-checkin {
+   		padding: 4rem 3rem;
+    	background-color: @bg;
+	}
+	.mail-placeh-sv {
+    	width: 100%;
+    	padding: 1rem 0 1rem 0;
+    	margin: 0.5rem 0 6rem 0;
+    	display: inline-block;
+    	border: none;
+    	border-bottom: 1px solid #fff;
+    	box-sizing: border-box;
+    	background-color:  #1E252C;
+    	color: #fff;
+    	outline: none;
+	}
+	.pass-placeh-sv {
+		width: 100%;
+    	padding: 1rem 0 1rem 0;
+    	margin: 0.5rem 0 6rem 0;
+    	display: inline-block;
+    	border: none;
+    	border-bottom: 1px solid #fff;
+    	box-sizing: border-box;
+    	background-color:  #1E252C;
+    	color: #fff;
+    	outline: none;
+	}
+	.passw-placeh-sv {
+		width: 100%;
+		height: 10rem;
+    	padding: 1rem 0 1rem 0;
+    	margin: 0.5rem 0 1rem 0;
+    	display: inline-block;
+    	border: none;
+    	border-bottom: 1px solid #fff;
+    	box-sizing: border-box;
+    	background-color:  #1E252C;
+    	color: #fff;
+    	outline: none;
+    	resize: vertical;
+	}
 	.header-text_lowercase-sv {
 		p{
 
@@ -765,32 +1009,27 @@
     	font: 400 1.2rem /3rem Montserrat;;
    		color: #fff;
 	}
-	.mail-placeh {
-		outline: none;
-	}
 	.pass-sv {
 	    font: 400 1.2rem /3rem Montserrat;
    		color: #fff;
-	}
-	.pass-placeh {
-		outline: none;
 	}
 	.passw-sv {
    		font: 400 1.2rem /3rem Montserrat;
     	color: #fff;
 	}
-	.passw-placeh {
-		outline: none;
+	.wrapper-btn-sv {
+		display: flex;
+		justify-content: flex-end;
 	}
-	.btn-checkin {
-    	width: 100%;
+	.btn-sv {
+    	width: 12rem;
     	height: 50px;
+    	padding: 0 0 0 0;
+    	margin: 1rem 0 3rem 0;
     	background: none;
     	border: 1px solid #fff;
-   		border-radius: 6px;
-   		font: 400 2rem  Montserrat;
+   		font: 400 1.6rem Montserrat;
    		color: #fff;
-   		margin-top: 1rem;
 	}
 
 
@@ -823,4 +1062,10 @@
   		background-color: #fff;
   		transform: rotate(90deg);
  		Z-index: 2;
+	}
+	.img-swiper {
+		
+	}
+	.img-111 {
+		margin: 0 5rem;
 	}
